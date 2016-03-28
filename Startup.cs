@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace MailClient
 {
-    public partial class Form1 : Form
+    public partial class Startup : Form
     {
-        public Form1()
+        public Startup()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

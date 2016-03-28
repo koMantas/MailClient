@@ -1,0 +1,9 @@
+D:\Dropbox\Projects\Network\MailClient\MailClient\bin\Debug\MailClient.exe.config
+D:\Dropbox\Projects\Network\MailClient\MailClient\bin\Debug\MailClient.exe
+D:\Dropbox\Projects\Network\MailClient\MailClient\bin\Debug\MailClient.pdb
+D:\Dropbox\Projects\Network\MailClient\MailClient\obj\Debug\MailClient.csprojResolveAssemblyReference.cache
+D:\Dropbox\Projects\Network\MailClient\MailClient\obj\Debug\MailClient.Startup.resources
+D:\Dropbox\Projects\Network\MailClient\MailClient\obj\Debug\MailClient.Properties.Resources.resources
+D:\Dropbox\Projects\Network\MailClient\MailClient\obj\Debug\MailClient.csproj.GenerateResource.Cache
+D:\Dropbox\Projects\Network\MailClient\MailClient\obj\Debug\MailClient.exe
+D:\Dropbox\Projects\Network\MailClient\MailClient\obj\Debug\MailClient.pdb
