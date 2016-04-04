@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Smtp.cs" />
     <Compile Include="Startup.cs">
       <SubType>Form</SubType>
     </Compile>

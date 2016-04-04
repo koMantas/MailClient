@@ -28,28 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.IMAPServerAddressLabel = new System.Windows.Forms.Label();
             this.UsernameLabel = new System.Windows.Forms.Label();
             this.PassLabel = new System.Windows.Forms.Label();
             this.Username = new System.Windows.Forms.TextBox();
             this.Password = new System.Windows.Forms.TextBox();
             this.SingUpButton = new System.Windows.Forms.Button();
-            this.Server = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
-            // 
-            // IMAPServerAddressLabel
-            // 
-            this.IMAPServerAddressLabel.AutoSize = true;
-            this.IMAPServerAddressLabel.Location = new System.Drawing.Point(23, 20);
-            this.IMAPServerAddressLabel.Name = "IMAPServerAddressLabel";
-            this.IMAPServerAddressLabel.Size = new System.Drawing.Size(78, 13);
-            this.IMAPServerAddressLabel.TabIndex = 1;
-            this.IMAPServerAddressLabel.Text = "Server address";
             // 
             // UsernameLabel
             // 
             this.UsernameLabel.AutoSize = true;
-            this.UsernameLabel.Location = new System.Drawing.Point(23, 63);
+            this.UsernameLabel.Location = new System.Drawing.Point(23, 24);
             this.UsernameLabel.Name = "UsernameLabel";
             this.UsernameLabel.Size = new System.Drawing.Size(55, 13);
             this.UsernameLabel.TabIndex = 4;
@@ -58,7 +47,7 @@
             // PassLabel
             // 
             this.PassLabel.AutoSize = true;
-            this.PassLabel.Location = new System.Drawing.Point(23, 105);
+            this.PassLabel.Location = new System.Drawing.Point(25, 63);
             this.PassLabel.Name = "PassLabel";
             this.PassLabel.Size = new System.Drawing.Size(53, 13);
             this.PassLabel.TabIndex = 5;
@@ -66,50 +55,37 @@
             // 
             // Username
             // 
-            this.Username.Location = new System.Drawing.Point(26, 79);
+            this.Username.Location = new System.Drawing.Point(26, 40);
             this.Username.Name = "Username";
             this.Username.Size = new System.Drawing.Size(224, 20);
             this.Username.TabIndex = 8;
             // 
             // Password
             // 
-            this.Password.Location = new System.Drawing.Point(26, 123);
+            this.Password.Location = new System.Drawing.Point(26, 79);
             this.Password.Name = "Password";
             this.Password.Size = new System.Drawing.Size(224, 20);
             this.Password.TabIndex = 9;
             // 
             // SingUpButton
             // 
-            this.SingUpButton.Location = new System.Drawing.Point(95, 149);
+            this.SingUpButton.Location = new System.Drawing.Point(100, 105);
             this.SingUpButton.Name = "SingUpButton";
             this.SingUpButton.Size = new System.Drawing.Size(75, 23);
             this.SingUpButton.TabIndex = 11;
             this.SingUpButton.Text = "Sign up";
             this.SingUpButton.UseVisualStyleBackColor = true;
             // 
-            // Server
-            // 
-            this.Server.FormattingEnabled = true;
-            this.Server.Items.AddRange(new object[] {
-            "GMAIL",
-            "VUMAIL"});
-            this.Server.Location = new System.Drawing.Point(26, 36);
-            this.Server.Name = "Server";
-            this.Server.Size = new System.Drawing.Size(224, 21);
-            this.Server.TabIndex = 12;
-            // 
             // Startup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(274, 199);
-            this.Controls.Add(this.Server);
+            this.ClientSize = new System.Drawing.Size(274, 134);
             this.Controls.Add(this.SingUpButton);
             this.Controls.Add(this.Password);
             this.Controls.Add(this.Username);
             this.Controls.Add(this.PassLabel);
             this.Controls.Add(this.UsernameLabel);
-            this.Controls.Add(this.IMAPServerAddressLabel);
             this.Name = "Startup";
             this.Text = "Startup";
             this.ResumeLayout(false);
@@ -118,14 +94,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label IMAPServerAddressLabel;
         private System.Windows.Forms.Label UsernameLabel;
         private System.Windows.Forms.Label PassLabel;
         private System.Windows.Forms.TextBox Username;
         private System.Windows.Forms.TextBox Password;
         private System.Windows.Forms.Button SingUpButton;
-        private System.Windows.Forms.ComboBox Server;
     }
 }
 

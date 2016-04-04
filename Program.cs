@@ -14,9 +14,12 @@ namespace MailClient
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
+            Smtp smtp = new Smtp();
+            smtp.ConnectToServer("smtps.vu.lt", 587);
+            MessageBox.Show("Cannot connect");
+            /*Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Startup());
+            Application.Run(new Startup());*/
         }
     }
 }
