@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IMAP\IMAPClient.cs" />
     <Compile Include="Startup.cs">
       <SubType>Form</SubType>
     </Compile>

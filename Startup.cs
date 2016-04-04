@@ -15,6 +15,7 @@ namespace MailClient
         public Startup()
         {
             InitializeComponent();
+            Server.SelectedIndex = Server.Items.IndexOf("GMAIL");
         }
 
         private void label1_Click(object sender, EventArgs e)
