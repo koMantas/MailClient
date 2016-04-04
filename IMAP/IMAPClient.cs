@@ -17,9 +17,9 @@ namespace MailClient.IMAP
         private SslStream _sslStream;
         private int _tag = 0;
 
-        public IMAPClient(string ServerAddress,int ServerPort, bool isSSL)
+        public IMAPClient(string ServerAddress, int ServerPort, bool isSSL)
         {
-            _client = new TcpClient(ServerAddress,ServerPort);
+            _client = new TcpClient(ServerAddress, ServerPort);
             _networkStream = _client.GetStream();
             if (isSSL)
             {
@@ -35,21 +35,29 @@ namespace MailClient.IMAP
 
         public void Login(string Username, string Password)
         {
-            WriteWithResponse(GetTag() + " LOGIN " + Username + " " + Password);
+            WriteWithResponse(" LOGIN " + Username + " " + Password);
+
+            //starttls chechup
+        }
+
+        public void Logout()
+        {
+            WriteWithResponse()
         }
 
         private string GetTag()
         {
-            return String.Format("a{0}", _tag++);
+            return String.Format("a{0} ", _tag++);
         }
 
-        private void WriteWithResponse(string Command)
+        private void WriteWithResponse(string CommandText)
         {
             ASCIIEncoding encoding = new ASCIIEncoding();
 
-            if (!Command.EndsWith("\r\n")) Command += "\r\n";
+            if (!CommandText.EndsWith("\r\n")) CommandText += "\r\n";
 
-            byte[] bufferBytes = encoding.GetBytes(Command);
+            string sentCommand = GetTag() + CommandText;
+            byte[] bufferBytes = encoding.GetBytes(sentCommand);
 
             _stream.Write(bufferBytes, 0, bufferBytes.Length);
 
