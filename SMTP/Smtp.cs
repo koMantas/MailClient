@@ -126,7 +126,27 @@ namespace MailClient.SMTP
         {
             Write("DATA");
             CheckResponseWithExceptionThrow(new string[] { "354" });
-            Write(messageData + "\r\n.\r\n");
+            string[] lines = messageData.Split('\n');
+            StringBuilder builder = new StringBuilder();
+            foreach (var line in lines)
+            {
+                if (line[0] == '.')
+                {
+                    builder.Append(".");
+                    builder.Append(line);
+                    builder.Append("\n");
+                }
+                else
+                {
+                    builder.Append(line);
+                    builder.Append("\n");
+                }
+
+            }
+
+
+
+            Write(builder.ToString() + "\r\n.\r\n");
             CheckResponseWithExceptionThrow(new string[] { "250" });
         }
 

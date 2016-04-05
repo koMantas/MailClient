@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Net.Sockets;
 using System.Text;
@@ -44,11 +45,9 @@ namespace MailClient
                 else
                 {
                     MessageBox.Show("Cannot send message");
-                    RCPTTextBox.Clear();
-                    MessageTextBox.Clear();
                 }
             }
-            catch (SocketException)
+            catch (IOException)
             {
                 ConnectionLost();
             }
@@ -60,7 +59,7 @@ namespace MailClient
             {
                 _client.LogOut();
             }
-            catch (SocketException){}
+            catch (IOException) {}
             finally
             {
                 _startupForm.Show();
@@ -82,7 +81,7 @@ namespace MailClient
             {
                 _client.LogOut();
             }
-            catch (SocketException) { }
+            catch (IOException) { }
         }
 
         private void ConnectionLost()

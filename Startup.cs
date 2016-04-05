@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MailClient.SMTP;
 using System.Net.Sockets;
@@ -46,11 +39,11 @@ namespace MailClient
             }
             catch (SocketException)
             {
-                MessageBox.Show("Cannot connect to gmail SMTP server. Run this app again");
+                MessageBox.Show("Cannot connect to gmail SMTP server");
             }
             catch (Exception)
             {
-                MessageBox.Show("Exception accured");
+                MessageBox.Show("Exception accured during communication with server");
             }
         }
 
