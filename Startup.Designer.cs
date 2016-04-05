@@ -66,6 +66,7 @@
             this.Password.Name = "Password";
             this.Password.Size = new System.Drawing.Size(224, 20);
             this.Password.TabIndex = 9;
+            this.Password.UseSystemPasswordChar = true;
             // 
             // SingUpButton
             // 
@@ -75,6 +76,7 @@
             this.SingUpButton.TabIndex = 11;
             this.SingUpButton.Text = "Sign up";
             this.SingUpButton.UseVisualStyleBackColor = true;
+            this.SingUpButton.Click += new System.EventHandler(this.SingUpButton_Click);
             // 
             // Startup
             // 
@@ -88,6 +90,7 @@
             this.Controls.Add(this.UsernameLabel);
             this.Name = "Startup";
             this.Text = "Startup";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Startup_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -46,7 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Smtp.cs" />
+    <Compile Include="GmailSMTPClient.cs" />
+    <Compile Include="SentMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SentMessage.Designer.cs">
+      <DependentUpon>SentMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SMTP\Smtp.cs" />
+    <Compile Include="SMTP\ISmtp.cs" />
+    <Compile Include="SMTP\SmtpException.cs" />
     <Compile Include="Startup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +64,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="SentMessage.resx">
+      <DependentUpon>SentMessage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Startup.resx">
       <DependentUpon>Startup.cs</DependentUpon>
     </EmbeddedResource>

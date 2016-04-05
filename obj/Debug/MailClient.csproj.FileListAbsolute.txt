@@ -7,3 +7,4 @@ D:\Dropbox\Projects\Network\MailClient\MailClient\obj\Debug\MailClient.Propertie
 D:\Dropbox\Projects\Network\MailClient\MailClient\obj\Debug\MailClient.csproj.GenerateResource.Cache
 D:\Dropbox\Projects\Network\MailClient\MailClient\obj\Debug\MailClient.exe
 D:\Dropbox\Projects\Network\MailClient\MailClient\obj\Debug\MailClient.pdb
+D:\Dropbox\Projects\Network\MailClient\MailClient\obj\Debug\MailClient.SentMessage.resources
